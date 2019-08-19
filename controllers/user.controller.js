@@ -16,6 +16,7 @@
     };
 
     $scope.username = $routeParams.username;
+    $scope.repoSortOrder = "+name";
     github.getUser($scope.username).then(onUserComplete, onError);
   };
 
