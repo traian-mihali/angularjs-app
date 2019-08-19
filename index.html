@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html ng-app="githubViewer">
+  <head>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.0/angular.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.0/angular-route.min.js"></script>
+
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+
+    <script src="./app.js"></script>
+    <script src="./controllers/main.controller.js"></script>
+    <script src="./controllers/user.controller.js"></script>
+    <script src="./controllers/repo.controller.js"></script>
+    <script src="./services/github.service.js"></script>
+  </head>
+
+  <body>
+    <div class="jumbotron">
+      <h1>Github Viewer</h1>
+    </div>
+    <div ng-view></div>
+  </body>
+</html>

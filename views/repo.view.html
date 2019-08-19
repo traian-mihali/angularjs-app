@@ -1,0 +1,16 @@
+<h2>{{ repo.full_name }}</h2>
+<br />
+<ul class="list-group">
+  <li class="list-group-item">URL: {{ repo.git_url }}</li>
+  <li class="list-group-item">Created: {{ repo.created_at | date }}</li>
+  <li class="list-group-item">Updated: {{ repo.updated_at | date }}</li>
+  <li class="list-group-item">language: {{ repo.language }}</li>
+  <li class="list-group-item">license: {{ repo.license | json }}</li>
+  <li class="list-group-item">default branch: {{ repo.default_branch }}</li>
+  <li class="list-group-item">forks: {{ repo.forks }}</li>
+</ul>
+
+<button class="btn btn-primary">
+  <a href="#/user/{{ repo.owner.login }}">Back to {{ repo.owner.login }}</a>
+</button>
+<button class="btn btn-primary"><a href="#/main">Back to Search</a></button>

@@ -1,0 +1,29 @@
+/* all
+------------------*/
+
+body {
+  padding: 30px;
+}
+
+/* main.view
+-------------------*/
+
+/* user.view && repo.view
+---------------------*/
+
+button {
+  margin-top: 10px;
+}
+
+button > a,
+button > :hover {
+  color: white;
+  text-decoration: none;
+}
+
+/* user.view
+-----------------------*/
+#user {
+  display: inline-block;
+  margin-left: 10px;
+}
