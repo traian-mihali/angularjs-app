@@ -1,6 +1,16 @@
 (function() {
   var app = angular.module("githubViewer", ["ngRoute"]);
 
+  console.log(app.value());
+
+  app.directive("enter", () => {
+    return function(scope, element) {
+      element.bind("mouseenter", () => {
+        console.log("inside the element");
+      });
+    };
+  });
+
   app.config(function($routeProvider) {
     $routeProvider
       .when("/main", {
