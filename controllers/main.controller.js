@@ -44,12 +44,14 @@
   app.directive("main", () => {
     return {
       restrict: "E",
-      template: `
+      replace: true,
+      template: `<div>
         <form name="searchUser" class="form-group" ng-submit="search(username)">
           <search></search>
           <validator></validator>
         </form>
         <btn></btn>
+        </div>
       `
     };
   });
