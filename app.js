@@ -1,5 +1,5 @@
 (function() {
-  var app = angular.module("githubViewer", ["ngRoute"]);
+  var app = angular.module("githubViewer", ["ngRoute", "ngAnimate"]);
 
   app.config(function($routeProvider) {
     $routeProvider
